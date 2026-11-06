@@ -26,3 +26,7 @@ NS Consumer (`ds-notification-service/src/DeviceServices.NotificationService.Con
 | `Enrichers/RisLocationContextEnricher.EnrichAsync` | `GetLocationInfo` | `GET locations/{consumerDeviceLocationId}/info` -> `GetLocationInfo` |
 
 The enrichers are invoked from `Processing/Pipelines/EventEnrichingProcessor.cs` (~lines 270-274). The client interface is `IIntegrationServicesEnrichmentApi`.
+
+## Activity feed investigations
+
+For bugs about wrong activity feed severity/title/body/alertName, use the `activity-feed-investigator` skill (`.github/skills/activity-feed-investigator/`). It traces notification-definitions -> template API resx -> tests -> RIS severity mapping (`DeviceAlertSeverityHelper`: High/Critical=Urgent, Medium=Warning, Low=Notice).
