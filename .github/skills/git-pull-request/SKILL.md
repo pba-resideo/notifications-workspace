@@ -42,6 +42,10 @@ The user does not want to bother the team with wording that is not right.
    EOF
    ```
    Open as ready, not draft. Report the URL, then `gh pr checks <url>` once.
+9. **Move the Jira ticket to In PR.** Right after the PR is created (no extra approval needed), transition the ticket from the title key:
+   - Atlassian MCP, cloudId `resideo.atlassian.net`. Call `getTransitionsForJiraIssue` and pick the transition whose target status is `In PR` (for ANW it is "Move to PR", id `37`, but look it up rather than hardcoding), then `transitionJiraIssue`.
+   - Skip silently if the ticket is already `In PR` or later (Ready to Deploy, Done). If no `In PR` transition is available, or the title is `NO-TICKET:`, say so in one line instead of guessing another transition.
+   - Mention the new status in the final report.
 
 ## Title
 
