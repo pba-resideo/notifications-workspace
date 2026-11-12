@@ -30,3 +30,12 @@ The enrichers are invoked from `Processing/Pipelines/EventEnrichingProcessor.cs`
 ## Activity feed investigations
 
 For bugs about wrong activity feed severity/title/body/alertName, use the `activity-feed-investigator` skill (`.github/skills/activity-feed-investigator/`). It traces notification-definitions -> template API resx -> tests -> RIS severity mapping (`DeviceAlertSeverityHelper`: High/Critical=Urgent, Medium=Warning, Low=Notice).
+
+## Opening PRs
+
+For "open a PR" requests, do not load the `git-pull-request` skill in the main chat. Delegate to the `git-pr` agent (`.github/agents/git-pr.agent.md`): run it for the DRAFT phase, show the user the returned title and body, get explicit approval with `ask_user`, then send the same agent `APPROVED` with the exact title and body for the CREATE phase (it also moves the Jira ticket to In PR). On a no, send `REVISE: <feedback>`.
+
+## Merging PRs
+
+- **ds-message-template-api**: squash merges are the norm (`gh pr merge <n> --squash --delete-branch`; history on `develop` is single-parent commits titled `... (#N)`).
+- Other repos: merge convention not yet verified; check `git log --first-parent origin/develop` before choosing a method.

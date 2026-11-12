@@ -9,6 +9,8 @@ Open PRs that pass each repo's checks on the first try, and never open one until
 
 Related skills: `git-branch` (branch name and base), `git-commit` (title uses the same `KEY: Description` standard).
 
+Agent mode: the `git-pr` agent (`.github/agents/git-pr.agent.md`) runs this skill in its own context. It cannot use `ask_user`, so it stops after step 6 and returns the draft; the invoking chat runs the approval gate and then sends back `APPROVED` with the exact title and body, which satisfies the gate for steps 8-9.
+
 ## Hard rule: approval gate
 
 **Nothing is pushed and no PR is created or edited until the user answers yes to the description.**
