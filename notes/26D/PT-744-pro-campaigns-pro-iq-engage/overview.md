@@ -21,5 +21,9 @@ Future scope: an inbox-style transactional messaging experience with sent/read/a
 
 ## Epics
 
-- [PT-1493](PT-1493-pro-campaigns-custom-messaging/) – Pro campaigns custom messaging
-- [PT-1494](PT-1494-campaign-audiences-custom-messaging/) – Campaign audiences for custom messaging
+- [PT-1493](PT-1493-pro-campaigns-custom-messaging/) – Pro campaigns custom messaging (Pro Portal)
+- [PT-1494](PT-1494-campaign-audiences-custom-messaging/) – Campaign audiences for custom messaging (Pro Portal)
+- [RES-3783](RES-3783-ris-pcs-create-campaign-support/) – RIS/PCS create campaign support (backend for PT-1493)
+- [RES-3820](RES-3820-ris-pcs-create-audience-support/) – RIS/PCS create audience support (backend for PT-1494)
+
+Other child epics, no notes yet: PT-1436 and PT-1437 (adoption metrics), MW-35065 (Resideo Connect display of pro campaign).
