@@ -39,3 +39,11 @@ For "open a PR" requests, do not load the `git-pull-request` skill in the main c
 
 - **ds-message-template-api**: squash merges are the norm (`gh pr merge <n> --squash --delete-branch`; history on `develop` is single-parent commits titled `... (#N)`).
 - Other repos: merge convention not yet verified; check `git log --first-parent origin/develop` before choosing a method.
+
+## Notes hierarchy
+
+Epic/ticket notes live in `notes/<PI>/<TICKET>-<brief-title>/`, e.g. `notes/26D/PT-1493-pro-campaigns-custom-messaging/`.
+
+- `<PI>` is the Program Increment (e.g. `26D`). Determine it from the epic's Fix Version field in Jira; the folder drops the space and hyphen (Fix Version `PI 26-D` -> `26D`).
+- The folder name is the Jira key plus a short kebab-case title taken from the Jira summary (drop prefixes like `[Resideo One]`).
+- Look up the title in Jira (cloud `resideo.atlassian.net`) when creating a new folder.
