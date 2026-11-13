@@ -46,4 +46,6 @@ Epic/ticket notes live in `notes/<PI>/<TICKET>-<brief-title>/`, e.g. `notes/26D/
 
 - `<PI>` is the Program Increment (e.g. `26D`). Determine it from the epic's Fix Version field in Jira; the folder drops the space and hyphen (Fix Version `PI 26-D` -> `26D`).
 - The folder name is the Jira key plus a short kebab-case title taken from the Jira summary (drop prefixes like `[Resideo One]`).
+- Epics normally sit directly under `<PI>/`. Only when an epic belongs to a Jira Feature that is being tracked, nest the epic folders under a feature folder: `notes/<PI>/<FEATURE-KEY>-<brief-title>/<EPIC-KEY>-<brief-title>/`, e.g. `notes/26D/PT-744-pro-campaigns-pro-iq-engage/PT-1494-campaign-audiences-custom-messaging/`.
+- Each feature and epic folder gets an `overview.md` (Jira link, type, PI, status, summary; features list their epics).
 - Look up the title in Jira (cloud `resideo.atlassian.net`) when creating a new folder.
