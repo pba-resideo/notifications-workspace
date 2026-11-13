@@ -4,7 +4,7 @@
 
 ## Summary
 
-Platform (RIS/PCS) backend counterpart to the Pro Portal audiences epic [PT-1494](../PT-1494-campaign-audiences-custom-messaging/overview.md). It delivers together with [RES-3783](../RES-3783-ris-pcs-create-campaign-support/overview.md) as part of [PT-744](../overview.md).
+Platform (RIS/PCS) backend counterpart to the Pro Portal audiences epic [PT-1494](../PT-1494-campaign-audiences-custom-messaging/README.md). It delivers together with [RES-3783](../RES-3783-ris-pcs-create-campaign-support/README.md) as part of [PT-744](../README.md).
 
 Pros today have a single custom message (40 characters) tied to branding, so they can't target customer subsets. This epic covers the audience creation workflow: a reusable, named group of customers that can be attached to multiple campaigns.
 

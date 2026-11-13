@@ -4,7 +4,7 @@
 
 ## Summary
 
-Platform (RIS/PCS) backend counterpart to the Pro Portal campaigns epic [PT-1493](../PT-1493-pro-campaigns-custom-messaging/overview.md). It delivers together with [RES-3820](../RES-3820-ris-pcs-create-audience-support/overview.md) as part of [PT-744](../overview.md).
+Platform (RIS/PCS) backend counterpart to the Pro Portal campaigns epic [PT-1493](../PT-1493-pro-campaigns-custom-messaging/README.md). It delivers together with [RES-3820](../RES-3820-ris-pcs-create-audience-support/README.md) as part of [PT-744](../README.md).
 
 Today a Pro's custom message (40 characters) is a single field coupled to branding. This epic gives RIS a separate communication channel for promotional/campaign messages, which frontends render with their own logic (IAM, email, push, etc.).
 

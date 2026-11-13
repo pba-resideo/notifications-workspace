@@ -4,7 +4,7 @@
 
 ## Summary
 
-Pros can currently send only one message to all customers. This epic adds campaign messaging to Pro Portal so Pro Owners/Admins can create campaigns and send them to all customers, selected audiences, or individual customers. Campaigns display in the Resideo Connect app. It uses the audiences built in [PT-1494](../PT-1494-campaign-audiences-custom-messaging/overview.md).
+Pros can currently send only one message to all customers. This epic adds campaign messaging to Pro Portal so Pro Owners/Admins can create campaigns and send them to all customers, selected audiences, or individual customers. Campaigns display in the Resideo Connect app. It uses the audiences built in [PT-1494](../PT-1494-campaign-audiences-custom-messaging/README.md).
 
 What it does:
 
@@ -19,7 +19,7 @@ What it does:
 
 Future: scheduled or time-boxed messages and additional filters.
 
-Parent feature: [PT-744](../overview.md). Sibling epic: PT-1494 (Campaign audiences for custom messaging).
+Parent feature: [PT-744](../README.md). Sibling epic: PT-1494 (Campaign audiences for custom messaging).
 
 ## Comment thread digest
 

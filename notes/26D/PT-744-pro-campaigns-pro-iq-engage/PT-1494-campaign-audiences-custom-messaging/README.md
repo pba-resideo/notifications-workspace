@@ -18,7 +18,7 @@ What it does:
 
 Out of scope for MVP: CSV upload of CRM customers into an audience.
 
-Parent feature: [PT-744](../overview.md). Sibling epic: PT-1493 (Pro campaigns custom messaging).
+Parent feature: [PT-744](../README.md). Sibling epic: PT-1493 (Pro campaigns custom messaging).
 
 ## Comment thread digest
 
@@ -30,7 +30,7 @@ Thread: Aliaksandra Nasevich (FE) posted the endpoint list and questions. Stepha
 
 | # | Question | Asked of | Status |
 |---|---|---|---|
-| 1 | Can an audience be deleted while a campaign uses it? Options from Anna: (a) block it and tell the user to delete the campaign first (suggested for MVO), or (b) delete it and remove it from the active campaign with a warning. | Anna, Travis | Open. Anna leans to (a), no decision. Same question is open on [PT-1493](../PT-1493-pro-campaigns-custom-messaging/overview.md). |
+| 1 | Can an audience be deleted while a campaign uses it? Options from Anna: (a) block it and tell the user to delete the campaign first (suggested for MVO), or (b) delete it and remove it from the active campaign with a warning. | Anna, Travis | Open. Anna leans to (a), no decision. Same question is open on [PT-1493](../PT-1493-pro-campaigns-custom-messaging/README.md). |
 | 2 | Sync Now: synchronous request or async job? | RIS | Not answered |
 | 3 | Smart audience POST: send filters plus excluded customer IDs? | RIS | Not answered (Stephan said "mostly correct") |
 | 4 | CSV upload: how does it work when RIS needs customer IDs but the CSV only has emails? | RIS, GXD | Open. Out of MVP per the epic summary, but the workflow is undefined. |
