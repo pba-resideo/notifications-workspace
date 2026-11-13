@@ -14,6 +14,7 @@ REPOS = [
     "notification-definitions",
     "ds-message-template-api",
     "integration-services",
+    "fortiq-workloads-deploy",
 ]
 ROOT = Path(__file__).resolve().parent.parent
 
